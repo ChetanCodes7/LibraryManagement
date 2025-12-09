@@ -15,6 +15,10 @@ string User::toLine() const {
 }
 
 User User::fromLine(const string &line) {
+    if (line.empty()) {
+        throw runtime_error("Cannot parse an empty line.");
+    }
+
     stringstream ss(line);
     string u, p, r;
     getline(ss, u, ',');
