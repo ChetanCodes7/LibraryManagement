@@ -1,5 +1,5 @@
 #include "Item.hpp"       // Include the header for the Item class
-#include <stdexcept>      // For std::runtime_error
+#include <stdexcept>      // For std :: runtime_error
 
 // Constructor for Item; initializes id, title, and availableCount
 Item::Item(int id, std::string title, int count) : id(id), title(title), availableCount(count) {
